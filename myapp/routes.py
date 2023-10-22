@@ -9,7 +9,7 @@ bp = Blueprint('bp', __name__, static_folder='',
                static_url_path='/static')
 
 #openai.api_key = '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'
-openai.api_key = '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'
+openai.api_key = 'Openai_key'
 
 
 @bp.route("/", methods=["GET", "POST"])
