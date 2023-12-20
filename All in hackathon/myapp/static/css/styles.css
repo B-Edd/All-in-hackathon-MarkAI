@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: visible;
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-image: linear-gradient(to top, #B6FFFA, #80B3FF);
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+
+.gradient-text {
+  /* Fallback: Set a background color. */
+  background-color: red;
+
+  /* Create the gradient. */
+  background-image: linear-gradient(to right, #BFBFFF, #000080);
+
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    text-align: center;
+}
+
+.bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -23423412351234;
+    background-image: linear-gradient(45deg, #e39ff6, #007DFF);
+    height: 70em;
+}
+
+form {
+    padding: 2em;
+    display: grid;
+}
+
+#pasting {
+    display: grid;
+    gap: 5em;
+    grid-template-rows: 1fr auto;
+    grid-column: 1 / 1;
+    position: relative
+}
+
+#textbox {
+    font-family: arial;
+    display: grid;
+    padding: 0.4em;
+    grid-row: 2 / 3;
+    height: 40em;
+    width: 70vw;
+    border-radius: 5px;
+}
+
+#submit {
+    display: grid;
+    grid-row: 3 / 4;
+    height: 3em;
+    width: 12em;
+    border-radius: 1em;
+    background-color: navy;
+    color: white;
+    transition: background-color 0.5s linear;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: navy;
+}
+
+#text-info {
+    background-color: rgb(255, 192, 203, 0.5);
+    border: 1px black solid;
+    padding: 2em 5em 1em 1em;
+    display: grid;
+    text-align: left;
+    margin-top: 2.3em;
+    margin-left: -5em;
+    height: 34.5vw;
+    font-size: 1vw;
+    width: 15em;
+    grid-column: 2 / 2;
+}
+
+#response {
+    color: white;
+    position: absolute;
+    width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 39em;
+    margin-left: 3%;
+}

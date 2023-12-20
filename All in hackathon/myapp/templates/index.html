@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MarkAI</title>
+    </head>
+    <body>
+        <header>
+            <h1 class="gradient-text">MarkAI</h1>
+            <h2>An AI to mark and give feedback for your English essay</h2>
+        </header>
+        <main>
+            <div class="bg"></div>
+            <div id="pasting">
+                <form method="post" action="/">
+                    <textarea id="textbox" name="textbox" cols="30" rows="10" placeholder="Paste your essay here"></textarea>
+                    <input type="submit" value="Mark my essay" id="submit">
+                </form>
+                <div id="text-info">
+                    <h2 id="text-info-words">Words: </h2>
+                    <h2 id="text-info-characters">Characters: </h2>
+                    <h2 id="text-info-sentences">Sentences</h2>
+                </div>
+            </div>
+            <div id="response">
+                <h2>AI feedback:</h2>
+                <p>{{ text }}</p>
+            </div>
+        </main>
+    </body>
+</html>
+<link rel="stylesheet" href="../static/css/styles.css">
+<script src="../static/javascript/script.js"></script>
